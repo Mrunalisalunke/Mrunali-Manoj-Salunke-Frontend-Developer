@@ -24,6 +24,7 @@ const NewNavbar = () => {
            href="/about" className="nav-item nav-link">About</Nav.Link>
           <Link to="/contact" className="nav-item nav-link">Contact</Link>
         </div>
+        <Link to="/form" className="btn btn-primary rounded-0 py-4 px-lg-5 d-none d-lg-block">Search Capsules<i className="fa fa-arrow-right ms-3"></i></Link>
       </div>
     </nav>
   );
