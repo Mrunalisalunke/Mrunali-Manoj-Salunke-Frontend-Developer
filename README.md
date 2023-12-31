@@ -1,70 +1,101 @@
+# SpaceXApp
+
+A React application that allows users to explore SpaceX capsule information.
+
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+npx create-react-app spacex-app
 
-## Available Scripts
+## Prerequisites
 
-In the project directory, you can run:
+- Node.js
+- npm 
+- php server
+- VS-code
 
-### `npm start`
 
+### Installing Dependencies
+
+npm install
+
+### Running the Application
+
+npm start
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Project Structure
 
-### `npm test`
+- `/src`: Contains the source code of the React application.
+- `/public`: Static assets and HTML template.
+- `/redux`: Redux store and actions.
+- `/middleware`: PHP Authorization.
+- `/component`: Search Functionality of capsules.
+- `/styles`: CSS and styling files.
+- `/jest`: Jest Tests for SearchForm.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+## Clone the repository:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1.git init
+2.git add .
+3.git commit -m "first commit"
+4.git branch -M main
+git remote add origin https://github.com/Mrunalisalunke/Mrunali-Manoj-Salunke-Frontend-Developer.git
+5.git push -u origin main
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Usage
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. Visit [http://localhost:3000](http://localhost:3000) in your web browser.
+2. Explore different sections such as Home, About, Contact.
+3. **Log in:** Click on the "Login" link and provide your credentials.
+4. Upon successful login, you will be redirected to the search form.
+5. **Search Form:** Use the search form to filter capsule information.
+6. Click on capsules to view details in a modal.
 
-### `npm run eject`
+### UI Design
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+1.Design visually appealing components for each page.
+2.Use of CSS frameworks like Bootstrap and Tailwind CSS for styling.
+3.Responsive UI.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Implement Search Functionality
+1.search Form Component: Create a separate SearchForm component.
+2.Design an input field for each search parameter (e.g., status, launch date, type).
+3.Implement a submit button to trigger the search.
+4.Search Logic:Use local state (React useState hook) to manage search parameters.Implement logic to filter capsules based on user input.
+5.Integrate with Redux:Use Redux to manage the state of the search parameters across components.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Utilize Hooks for Data Fetching
+1.Capsules Component:Create a Capsules component responsible for fetching and displaying capsule data.Use the useEffect hook to initiate data fetching.
+2.Redux Actions:Define Redux actions for fetching capsules and updating the Redux store.
+3.Redux Thunk:Use Redux Thunk middleware to handle asynchronous actions (API calls).
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### PHP Authorization
 
-## Learn More
+1.Create a PHP Backend:Set up a PHP server to handle authentication and authorization logic.
+2.Create Login Component in React:Design a login form in your React application.
+3.Handle Form Submission:On form submission, make an API request to your PHP authentication endpoint.Send user credentials (username and password) securely.
+4.Handle Authentication Response:Once authenticated, store the authentication token (if using tokens) in a secure way (e.g., in local storage).
+5.Redirect to Search Form:Use React Router to programmatically navigate to the search form upon successful login.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Jest Test Cases for Search Form
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+1.Install Jest and Testing Libraries
+2.Write test file searchform.test.js for search form component.
+3.Write Test Cases
+4.Run Tests-npm test
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### ESLint for Linting
 
-### Analyzing the Bundle Size
+1.Install ESLint
+2.Create an ESLint configuration file eslintrc.js.
+3.Define ESLint rules in configuration file based on preferences.
+4.Run ESLint
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

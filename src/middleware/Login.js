@@ -1,7 +1,5 @@
 /* eslint-env browser */
-
 import React, { useState } from 'react';
-import PropTypes from 'prop-types';
 import { useNavigate } from 'react-router-dom';
 
 const Login = () => {
@@ -24,7 +22,6 @@ const Login = () => {
       const data = await response.json();
 
       if (data.success) {
-        
         navigate('/form');
       } else {
         alert(data.message);
@@ -62,10 +59,6 @@ const Login = () => {
       </div>
     </div>
   );
-};
-
-Login.propTypes = {
-  onLogin: PropTypes.func.isRequired,
 };
 
 export default Login;
