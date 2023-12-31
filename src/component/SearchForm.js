@@ -8,19 +8,18 @@ const SearchForm = ({ onSearch }) => {
 
   const handleSearch = () => {
     onSearch({ status, launchDate, type });
-
-    setStatus('');
+   setStatus('');
     setLaunchDate('');
     setType('');
   };
 
   return (
-    <div className="falcon-container relative">
-            <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center">
-    <h1 class="text-primary text-4xl font-bold z-10">
+    <div className="">
+            <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center">
+    <h1 className="text-primary text-4xl font-bold z-10">
         SpaceX Capsules
     </h1>
-    <p class="text-primary text-lg z-10">
+    <p className="text-primary text-lg z-10">
         The most powerful operational rocket
     </p>
 </div>
