@@ -1,4 +1,3 @@
-// App.js
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { useDispatch, useSelector } from 'react-redux';
@@ -13,6 +12,7 @@ import SearchForm from './component/SearchForm';
 import DataGrid from './component/DataGrid';
 import Modal from './component/Modal'; 
 import CapsuleDetailsPopup from './component/ItemPopup';
+import Login from './middleware/Login';
 import './styles/tailwind.css';
 
 
@@ -21,7 +21,7 @@ const App = () => {
   const localCapsules = useSelector((state) => state.capsules);
   const filteredCapsules = useSelector((state) => state.filteredCapsules);
   const [selectedCapsule, setSelectedCapsule] = useState(null);
-  const [setCurrentPage] = useState(1); 
+  const [setCurrentPage] = useState(1); // Add the missing state
 
   useEffect(() => {
     const fetchData = async () => {
@@ -57,7 +57,7 @@ const App = () => {
     const totalPages = Math.ceil(localCapsules.length / 10);
     const newPage = Math.min(Math.max(pageNumber, 1), totalPages);
 
-    setCurrentPage(newPage);
+    setCurrentPage(newPage); // Fix the use of setCurrentPage
   };
 
   const handleCapsuleClick = (capsule) => {
@@ -72,10 +72,12 @@ const App = () => {
     <Router>
       <div className="container mx-auto p-4">
         <NewNavbar />
+
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/login" element={<Login />} />
           <Route
             path="/form"
             element={
