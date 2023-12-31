@@ -1,4 +1,4 @@
-// jest.config.js
+/* eslint-env node */
 module.exports = {
   testEnvironment: 'jsdom',
   moduleNameMapper: {

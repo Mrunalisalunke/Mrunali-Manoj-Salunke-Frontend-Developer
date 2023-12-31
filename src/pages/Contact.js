@@ -52,7 +52,7 @@ function Contact() {
             </div>
             <div className="col-md-6">
               <div className="wow fadeInUp" data-wow-delay="0.5s">
-                <p className="mb-4">The contact form is currently inactive. Get a functional and working contact form with HTML & Javascript in a few minutes. Just copy and paste the files, add a little code and you're done.</p>
+                <p className="mb-4">The contact form is currently inactive. Get a functional and working contact form with HTML & Javascript in a few minutes. Just copy and paste the files, add a little code and you &apos; re done.</p>
                 <form>
                   <div className="row g-3">
                     <div className="col-md-6">
