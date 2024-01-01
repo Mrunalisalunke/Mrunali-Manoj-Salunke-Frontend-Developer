@@ -1,4 +1,3 @@
-// reducers.js
 import { SET_CAPSULES, SET_FILTERED_CAPSULES } from './actions';
 
 const initialState = {

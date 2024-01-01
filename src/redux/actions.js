@@ -1,4 +1,3 @@
-// actions.js
 export const SET_CAPSULES = 'SET_CAPSULES';
 export const SET_FILTERED_CAPSULES = 'SET_FILTERED_CAPSULES';
 

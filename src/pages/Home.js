@@ -31,7 +31,7 @@ function Home() {
                                         <h1 className="display-3 text-white animated slideInDown">STARLINK MISSION</h1>
                                         <p className="fs-5 text-white mb-4 pb-2">As the world &apos; s leading provider of launch services – and the only provider with an orbital class reusable rocket – SpaceX has deep experience with both spacecraft and on-orbit operations.</p>
                                         <a href="/about" className="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Read More</a>
-                                        <a href="/form" className="btn btn-light py-md-3 px-md-5 animated slideInRight">Join Now</a>
+                                        <a href="/login" className="btn btn-light py-md-3 px-md-5 animated slideInRight">Join Now</a>
                                     </div>
                                 </div>
                             </div>
@@ -47,7 +47,7 @@ function Home() {
                                         <h1 className="display-3 text-white animated slideInDown">FALCON-9 MISSION</h1>
                                         <p className="fs-5 text-white mb-4 pb-2">As the world &apos; s leading provider of launch services – and the only provider with an orbital class reusable rocket – SpaceX has deep experience with both spacecraft and on-orbit operations.</p>
                                         <a href="/about" className="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Read More</a>
-                                        <a href="/form" className="btn btn-light py-md-3 px-md-5 animated slideInRight">Join Now</a>
+                                        <a href="/login" className="btn btn-light py-md-3 px-md-5 animated slideInRight">Join Now</a>
                                     </div>
                                 </div>
                             </div>

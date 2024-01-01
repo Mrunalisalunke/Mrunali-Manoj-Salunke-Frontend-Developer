@@ -13,7 +13,7 @@ const NewNavbar = () => {
                 style={{ width: '200px', height: 'auto', border: '2px solid black', borderRadius: '8px' }}
             />
       </Link>
-      <button type="button" className="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+      <button type="button" className="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-label="Toggle navigation">
         <span className="navbar-toggler-icon"></span>
       </button>
       <div className="collapse navbar-collapse" id="navbarCollapse">

@@ -26,10 +26,10 @@ const Footer = () => {
               <p className="mb-2"><i className="fa fa-phone-alt me-3"></i>+91 7499957817</p>
               <p className="mb-2"><i className="fa fa-envelope me-3"></i>mrunali@gmail.com</p>
               <div className="d-flex pt-2">
-                <a className="btn btn-outline-light btn-social" href="https://www.linkedin.com/in/mrunali-salunke-6383a220a"><i className="fab fa-twitter"></i></a>
-                <a className="btn btn-outline-light btn-social" href="https://www.instagram.com/mrunu_911/"><i className="fab fa-facebook-f"></i></a>
-                <a className="btn btn-outline-light btn-social" href="https://www.instagram.com/mrunu_911/"><i className="fab fa-youtube"></i></a>
-                <a className="btn btn-outline-light btn-social" href="https://www.linkedin.com/in/mrunali-salunke-6383a220a"><i className="fab fa-linkedin-in"></i></a>
+                <a className="btn btn-outline-light btn-social" href="https://www.linkedin.com/in/mrunali-salunke-6383a220a" title="LinkedIn Profile"><i className="fab fa-twitter"></i></a>
+                <a className="btn btn-outline-light btn-social" href="https://www.instagram.com/mrunu_911/" title="LinkedIn Profile"><i className="fab fa-facebook-f"></i></a>
+                <a className="btn btn-outline-light btn-social" href="https://www.instagram.com/mrunu_911/" title="LinkedIn Profile"><i className="fab fa-youtube"></i></a>
+                <a className="btn btn-outline-light btn-social" href="https://www.linkedin.com/in/mrunali-salunke-6383a220a" title="LinkedIn Profile"><i className="fab fa-linkedin-in"></i></a>
               </div>
             </div>
             <div className="col-lg-3 col-md-6">
@@ -37,7 +37,7 @@ const Footer = () => {
              
               <div className="position-relative mx-auto" style={{ maxWidth: '400px' }}>
                 <input className="form-control bg-transparent w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email" />
-                <button type="button" className="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
+                <button type="button" href="/login" className="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
               </div>
             </div>
           </div>

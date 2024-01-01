@@ -10,7 +10,7 @@ function Contact() {
               <div className="row gy-4">
               <div className="col-md-4 wow fadeIn" data-wow-delay="0.1s">
               <div className="d-flex align-items-center bg-light rounded p-4">
-              <a href="https://maps.google.com" target="_blank" rel="noopener noreferrer">
+              <a href="https://maps.google.com" title="Visit Example Website" target="_blank" rel="noopener noreferrer">
               <div className="bg-white border rounded d-flex flex-shrink-0 align-items-center justify-content-center me-3" style={{ width: "45px", height: "45px" }}>
               <i className="fa fa-map-marker-alt text-primary"></i>
               </div>
@@ -39,15 +39,15 @@ function Contact() {
             </div>
             <div className="col-md-6 wow fadeInUp" data-wow-delay="0.1s">
             <iframe
-  className="position-relative rounded w-100 h-100"
-  src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d484915.28813466564!2d73.23587368697508!3d18.2832753140739!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1688673461502!5m2!1sen!2sin"
-  frameBorder="0"
-  style={{ minHeight: "400px", border: "0" }}
-  allowFullScreen=""
-  aria-hidden="false"
-  tabIndex="0"
-  title="Google Maps Location"
-></iframe>
+              className="position-relative rounded w-100 h-100"
+               src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d484915.28813466564!2d73.23587368697508!3d18.2832753140739!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1688673461502!5m2!1sen!2sin"
+                frameBorder="0"
+                style={{ minHeight: "400px", border: "0" }}
+                allowFullScreen=""
+                aria-hidden="false"
+                tabIndex="0"
+                title="Google Maps Location"
+            ></iframe>
 
             </div>
             <div className="col-md-6">

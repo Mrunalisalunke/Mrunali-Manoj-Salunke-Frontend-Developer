@@ -1,4 +1,3 @@
-// store.js
 import { createStore } from 'redux';
 import capsuleReducer from './reducers';
 
