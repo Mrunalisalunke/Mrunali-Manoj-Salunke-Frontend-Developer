@@ -31,6 +31,7 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 - `/redux`: Redux store and actions.
 - `/middleware`: PHP Authorization.
 - `/component`: Search Functionality of capsules.
+- `/pages` :home page,about us page,contact us page.
 - `/styles`: CSS and styling files.
 - `/jest`: Jest Tests for SearchForm.
 
