@@ -1,6 +1,7 @@
 /* eslint-env browser */
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import './Login.css';
 
 const Login = () => {
   const [username, setUsername] = useState('');
@@ -32,33 +33,33 @@ const Login = () => {
   };
 
   return (
-    <div style={{ textAlign: 'center', marginTop: '50px' }}>
-      <div style={{ border: '1px solid #ccc', padding: '20px', borderRadius: '5px', width: '300px', margin: '0 auto' }}>
-        <h1>Login</h1>
-        <form onSubmit={handleSubmit}>
-          <label>
-            Username:
-            <input
-              type="text"
-              value={username}
-              onChange={(e) => setUsername(e.target.value)}
-            />
-          </label>
-          <br />
-          <label>
-            Password:
-            <input
-              type="password"
-              value={password}
-              onChange={(e) => setPassword(e.target.value)}
-            />
-          </label>
-          <br />
-          <button type="submit">Login</button>
-        </form>
-      </div>
+    <div className="login-container">
+    <div className="login-box">
+      <h1>Login</h1>
+      <form onSubmit={handleSubmit}>
+        <label>
+          Username:
+          <input
+            type="text"
+            value={username}
+            onChange={(e) => setUsername(e.target.value)}
+          />
+        </label>
+        <br />
+        <label>
+          Password:
+          <input
+            type="password"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+          />
+        </label>
+        <br />
+        <button style={{ width: '100%', padding: '10px', backgroundColor: '#007bff', color: '#fff', border: 'none', borderRadius: '4px', cursor: 'pointer', transition: 'background-color 0.3s ease-in-out' }} type="submit">Login</button>
+      </form>
     </div>
-  );
+  </div>
+);
 };
 
 export default Login;
